@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Telusu_Kada_(2025)_Telugu_720p.mkv"
-          OUTPUT_FOLDER="telusukada"
+          INPUT_URL="https://cdn.telugudub.store/Hi_Nanna_(2023)_Telugu_720p.mkv"
+          OUTPUT_FOLDER="hinanna"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add telusukada
+          git add hinanna
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
