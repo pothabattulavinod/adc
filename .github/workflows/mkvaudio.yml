@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Mass_Jathara_(2025)_Telugu_720p.mkv"
-          OUTPUT_FOLDER="massj"
+          INPUT_URL="https://cdn.telugudub.store/KGF_Chapter-2_(2022)_Telugu_720p.mkv"
+          OUTPUT_FOLDER="kgf2"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add massj
+          git add kgf2
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
