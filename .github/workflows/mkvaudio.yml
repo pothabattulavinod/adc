@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/KGF_Chapter-2_(2022)_Telugu_720p.mkv"
-          OUTPUT_FOLDER="kgf2"
+          INPUT_URL="https://cdn.telugudub.store/The_Girlfriend_(2025)_Telugu_720p.mkv"
+          OUTPUT_FOLDER="thegf"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add kgf2
+          git add thegf
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
